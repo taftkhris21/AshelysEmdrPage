@@ -6,8 +6,8 @@ import { Route, NavLink, HashRouter, Routes } from "react-router-dom";
 
 export const Main = () => {
     return (
-        <div className='pageContainer'>
-            <HashRouter>
+        <>
+         <HashRouter>
                 <div className='page'>
                     <ul className="header">
                         <li><NavLink to="/">EMDR^</NavLink></li>
@@ -22,6 +22,7 @@ export const Main = () => {
                 </div>
             </HashRouter>
             <Clock />
-        </div>
+        </>
+           
     )
 }
